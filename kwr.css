@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{  
+    --border: .1rem transparent rgba(255, 255, 255, 0.596);
+
+}
+
+*{
+    font-family: "Nunito", sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+}
+
+*::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: #772feb;
+    border-radius: 4rem;
+}
+
+*::-webkit-scrollbar-thumb:hover{
+    background-color: #742ecf;
+}
+
+
+body{
+    background: linear-gradient(to bottom, #f1ebeb, #6722e9 90%);
+    height: 100vh;
+    margin: 0;
+}
+
+.up{
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem;
+    border: var(--border);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    
+}
+
+.up .logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.up nav{
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.up nav button{
+    color: #fffcfc;
+    text-decoration: none;
+    padding: .5rem;
+    margin-left: 2rem;
+    border-radius: 5px;
+    transition: .3s;
+    font-size: 1.2rem;
+    background-color: #ec250f;
+}
+
+.up nav a{
+    color: #1a0e0e;
+    text-decoration: none;
+    padding: .5rem;
+    margin-left: 2rem;
+    border-radius: 5px;
+    transition: .3s;
+    font-size: 1.2rem;
+}
+
+.up .button{
+    display: flex;
+    align-items: center;
+    margin-left: 17rem;
+    gap: 2rem;
+}
+
+.up .button button{
+    color: #1a0e0e;
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: 5px;
+    transition: .3s;
+    font-size: 1.2rem;
+}
+
+
+.up .button button.track{
+    color: rgb(243, 231, 231);
+    background-color: #6722e9;
+    border: var(--border);
+    margin-left: 10rem;
+    padding: .7rem 2rem .7rem 2rem;
+}

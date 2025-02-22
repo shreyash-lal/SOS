@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/report.css">
+    <title>Report</title>
+</head>
+
+<body>
+
+    <div id="loader" class="loader" style="display: none;">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="container" id="container">
+        <div class="form-container">
+            <form action="/report" method="post">
+                <h1>Report a crime</h1>
+                <div class="report">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <input type="text" placeholder="Mobile No.">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Name of Accused">
+                    <select name="Relation">
+                        <option value="" disabled selected>Relation</option>
+                        <option value="husband">Husband</option>
+                        <option value="father-in-law">Father in law</option>
+                        <option value="mother-in-law">Mother in law</option>
+                        <option value="neighour">Neighour</option>
+                        <option value="colleague">Office colleague</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <input type="text" placeholder="Mobile No. / NA">
+                    <select name="crimeType">
+                        <option value="" disabled selected>Select Crime Type</option>
+                        <option value="theft">Harrasment</option>
+                        <option value="assault">Sexual Abuse</option>
+                        <option value="fraud">Domestic Violence</option>
+                        <option value="vandalism">Rape</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <textarea name="" id="" placeholder="Write about the incident"></textarea>
+                    <input type="file" name="" id="">
+                </div>
+                <button class="rep">Report</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="/loader.js"></script>
+
+</html>

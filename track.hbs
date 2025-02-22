@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="/track.css">
+    <title>Track</title>
+</head>
+
+<body>
+
+    <div id="loader" class="loader" style="display: none;">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="container" id="container">
+        <div class="form-container">
+            <form action="/track" method="post">
+                <h1>Track</h1>
+                <div class="report">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Last Name">
+                    <input type="text" placeholder="Mobile No.">
+                    <input type="email" placeholder="Email">
+                    
+                    <button type="button" id="getLocation">Get Current Location</button>
+                    <input type="text" id="currentLocation" placeholder="Current Location" readonly>
+                    <input type="text" id="realTimeLocation" placeholder="Real-Time Location" readonly>
+                </div>
+                <button type="button" class="rep" id="trackButton">Track</button>
+                <button type="button" class="sos" onclick="window.location.href='/emergency'">SOS</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="map" style="height: 500px; width: 100%; display: none;"></div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="/track.js"></script>
+    <script src="/track2.js"></script>
+    <script src="/loader.js"></script>
+</body>
+
+</html>
